@@ -1,0 +1,31 @@
+<app-header></app-header>
+
+
+<div class ="container blur my-4 table-responsive">
+<div class ="p-4 table-responsive"> 
+    <table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" id="table" class="row-border hover " >
+        <thead>
+          <tr>
+            <th class="centrar">Id</th>
+            <th class="centrar">Nombre</th>
+            <th class="centrar">Forma</th>
+            <th class="centrar">Movimiento</th>
+            <th class="centrar">Tipo</th>
+            <th class="centrar">Hp</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let x of poke">
+            <td class="centrar">{{x.position}}</td>
+            <td class="centrar">{{x.name}}</td>
+            <td class="centrar"><img src="{{x.image}}" alt="image poke"></td>
+            <td class="centrar">{{x.move}}</td>
+            <td class="centrar">{{x.type}}</td>
+            <td class="centrar">{{x.stats}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+
+<app-footer></app-footer>

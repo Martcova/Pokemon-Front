@@ -1,0 +1,10 @@
+.blur {
+    box-shadow: inset 0px 0px 2px #fefefed1;
+    -webkit-backdrop-filter: saturate(200%) blur(30px);
+    backdrop-filter: saturate(200%) blur(30px);
+    background-color: rgba(239, 224, 250, 0.8) !important;
+  }
+
+  .centrar{
+    text-align:center;
+  }
